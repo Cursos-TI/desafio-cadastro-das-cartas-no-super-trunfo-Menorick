@@ -19,10 +19,12 @@ scanf("%e", &Área);
 scanf("%f", &PIB);
 scanf("%f", &pTuristico);
 
-printf("Estado: %s\n, Estado);
-printf("Código: %s\n, Código);
-printf("Cidade: %s\n, Cidade);
-printf("População: %d\n, População);
-printf("Área: %e\n, Área);
-printf("PIB: %f\n, PIB);
-printf("Número de Pontos Turísticos: %f\n, pTuristico);
+printf("Estado: %s\n", Estado);
+printf("Código: %s\n", Código);
+printf("Cidade: %s\n", Cidade);
+printf("População: %d\n", População);
+printf("Área: %e\n", Área);
+printf("PIB: %f\n", PIB);
+printf("Número de Pontos Turísticos: %f\n", pTuristico);
+
+return 0;
