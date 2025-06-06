@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h> \\serve pra ler a função do strcspn
+#include <string.h> //serve pra ler a função do strcspn
 
 int main() {
     char nome_estado1[50], codigo_estado1[10], nome_cidade1[50];
@@ -11,16 +11,16 @@ int main() {
     int populacao2, pontos_turisticos2;
     float area2, pib2;
 
-    \\Adcionei o (fgets e stdin) para ler a linha completa e com espaços
-    \\e tambem adcionei getchar() para limpar o buffer, ja que nao posso usar while
-    \\o motivo e pq na segunda carta o estado e o codigo eram perguntados juntos
+    //Adcionei o (fgets e stdin) para ler a linha completa e com espaços
+    //e tambem adcionei getchar() para limpar o buffer, ja que nao posso usar while
+    //o motivo e pq na segunda carta o estado e o codigo eram perguntados juntos
 
     printf("= PRIMEIRA CARTA =\n");
     printf("Digite o nome do Estado: ");
     fgets(nome_estado1, 50, stdin);
     nome_estado1[strcspn(nome_estado1, "\n")] = '\0'; 
 
-    \\A função e a expressão serve pro \n que pode ser lido pelo fgets seja removido da string de entrada.
+    //A função e a expressão serve pro \n que pode ser lido pelo fgets seja removido da string de entrada.
 
     printf("Digite o código do Estado: ");
     fgets(codigo_estado1, 10, stdin);
