@@ -20,7 +20,7 @@ int main() {
     fgets(nome_estado1, 50, stdin);
     nome_estado1[strcspn(nome_estado1, "\n")] = '\0'; 
 
-    //A função e a expressão serve pro \n que pode ser lido pelo fgets seja removido da string de entrada.
+    //A função (strcspn) e a expressão (= '\0') serve pro \n que pode ser lido pelo fgets ser removido da string de entrada.
 
     printf("Digite o código do Estado: ");
     fgets(codigo_estado1, 10, stdin);
