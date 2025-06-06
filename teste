@@ -1,43 +1,61 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>  // Coloquei pra conseguir ler a função do strcspn
 
-int main (){
-    char Estado;
-    char Código;
-    char Cidade;
-    int População;
-    int pTuristico;
-    float PIB;
-    float Área;
 
-    printf("Digite o nome do Estado da sua Carta: \n"); 
-    scanf("%s", &Estado);
 
-    printf("Digite o Código da Carta que você possui: \n");
-    scanf("%s", &Código);
+int main() {
+    // Dados de texto (cadeias de caracteres)
+    char nome_estado[50];      
+    char codigo_estado[10];    
+    char nome_cidade[50];      
+    int populacao;             
+    int pontos_turisticos;     
+    float area;                
+    float pib;                
 
-    printf("Digite o nome da Cidade da sua Carta: \n");
-    scanf("%s", &Cidade);
+    /* Entrada de dados */
 
-    printf("Digite a População da sua Carta: \n");
-    scanf("%d", &População);
+    // usei fgets pra permitir uso de espaço junto com stdin
+    printf("Digite o nome do Estado: ");
+    fgets(nome_estado, 50, stdin);
+    nome_estado[strcspn(nome_estado, "\n")] = '\0';  
 
-    printf("Digite a Área da sua Carta: \n");
-    scanf("%d", &Área);
+    
+    printf("Digite o código do Estado: ");
+    fgets(codigo_estado, 10, stdin);
+    codigo_estado[strcspn(codigo_estado, "\n")] = '\0';
 
-    printf("Digite o PIB da sua Carta: \n");
-    scanf("%f", &PIB);
+    
+    printf("Digite o nome da Cidade: ");
+    fgets(nome_cidade, 50, stdin);
+    nome_cidade[strcspn(nome_cidade, "\n")] = '\0';
 
-    printf("Digite o Número de Pontos Turisticos da sua Carta: \n");
-    scanf("%f", &pTuristico);
+    
+    printf("Digite a população total: ");
+    scanf("%d", &populacao);
 
-    printf("Estado: %s\n", Estado);
-    printf("Código: %s\n", Código);
-    printf("Cidade: %s\n", Cidade);
-    printf("População: %d\n", População);
-    printf("Área: %d\n", Área);
-    printf("PIB: %f\n", PIB);
-    printf("Número de Pontos Turísticos: %f\n", pTuristico);
+    
+    printf("Digite a área em km²: ");
+    scanf("%f", &area);
 
-return 0;
+    // Eu acho que tava dizendo pra especificar em milhoes
+    printf("Digite o PIB em milhões: ");
+    scanf("%f", &pib);
+
+    
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos);
+
+    /* Eu juro que não to mais entendendo o que to fazendo */
+
+    printf("\n=== DADOS CADASTRADOS ===\n");
+    printf("Estado: %s (%s)\n", nome_estado, codigo_estado);
+    printf("Cidade: %s\n", nome_cidade);
+    printf("População: %d habitantes\n", populacao);
+    printf("Área: %.2f km²\n", area);          
+    printf("PIB: R$ %.2f milhões\n", pib);     
+    printf("Pontos turísticos: %d\n", pontos_turisticos);
+
+    return 0;  // Encerro o codigo, amem.
 }
