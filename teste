@@ -2,38 +2,42 @@
 #include <stdlib.h>
 
 int main (){
- char Estado, Código, Cidade;
- int População, pTuristico;
- float PIB, Área;
+    char Estado;
+    char Código;
+    char Cidade;
+    int População;
+    int pTuristico;
+    float PIB;
+    float Área;
 
-printf("Digite o nome do Estado da sua Carta \n"); 
-scanf("%s", &Estado);
+    printf("Digite o nome do Estado da sua Carta: \n"); 
+    scanf("%s", &Estado);
 
-printf("Digite o Código da Carta que você possui \n");
-scanf("%s", &Código);
+    printf("Digite o Código da Carta que você possui: \n");
+    scanf("%s", &Código);
 
-printf("Digite o nome da Cidade da sua Carta \n");
-scanf("%s", &Cidade);
+    printf("Digite o nome da Cidade da sua Carta: \n");
+    scanf("%s", &Cidade);
 
-printf("Digite a População da sua Carta \n");
-scanf("%d", &População);
+    printf("Digite a População da sua Carta: \n");
+    scanf("%d", &População);
 
-printf("Digite a Área da sua Carta \n");
-scanf("%e", &Área);
+    printf("Digite a Área da sua Carta: \n");
+    scanf("%d", &Área);
 
-printf("Digite o PIB da sua Carta \n");
-scanf("%f", &PIB);
+    printf("Digite o PIB da sua Carta: \n");
+    scanf("%f", &PIB);
 
-printf("Digite o Número de Pontos Turisticos da sua Carta \n");
-scanf("%f", &pTuristico);
+    printf("Digite o Número de Pontos Turisticos da sua Carta: \n");
+    scanf("%f", &pTuristico);
 
-printf("Estado: %s\n", Estado);
-printf("Código: %s\n", Código);
-printf("Cidade: %s\n", Cidade);
-printf("População: %d\n", População);
-printf("Área: %e\n", Área);
-printf("PIB: %f\n", PIB);
-printf("Número de Pontos Turísticos: %f\n", pTuristico);
+    printf("Estado: %s\n", Estado);
+    printf("Código: %s\n", Código);
+    printf("Cidade: %s\n", Cidade);
+    printf("População: %d\n", População);
+    printf("Área: %e\n", Área);
+    printf("PIB: %f\n", PIB);
+    printf("Número de Pontos Turísticos: %f\n", pTuristico);
 
 return 0;
 }
