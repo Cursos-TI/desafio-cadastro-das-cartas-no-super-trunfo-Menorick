@@ -35,7 +35,7 @@ int main (){
     printf("Código: %s\n", Código);
     printf("Cidade: %s\n", Cidade);
     printf("População: %d\n", População);
-    printf("Área: %e\n", Área);
+    printf("Área: %d\n", Área);
     printf("PIB: %f\n", PIB);
     printf("Número de Pontos Turísticos: %f\n", pTuristico);
 
