@@ -5,7 +5,6 @@
 
 
 int main() {
-    // Dados de texto (cadeias de caracteres)
     char nome_estado[50];      
     char codigo_estado[10];    
     char nome_cidade[50];      
@@ -14,7 +13,6 @@ int main() {
     float area;                
     float pib;                
 
-    /* Entrada de dados */
 
     // usei fgets pra permitir uso de espaço junto com stdin
     printf("Digite o nome do Estado: ");
@@ -50,7 +48,8 @@ int main() {
     /* Eu juro que não to mais entendendo o que to fazendo */
 
     printf("\n=== DADOS CADASTRADOS ===\n");
-    printf("Estado: %s (%s)\n", nome_estado, codigo_estado);
+    printf("Estado: %s\n", nome_estado);
+    printf("Código: %s\n", codigo_estado);
     printf("Cidade: %s\n", nome_cidade);
     printf("População: %d habitantes\n", populacao);
     printf("Área: %.2f km²\n", area);          
