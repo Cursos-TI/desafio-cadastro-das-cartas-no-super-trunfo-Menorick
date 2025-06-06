@@ -1,2 +1,20 @@
-\\Tenho que pedir nome do ESTADO, CÓDIGO DA CARTA, CIDADE, POPULAÇÃO, ÁREA, PIB e NUMERO
-\\DE PONTOS TURISTICOS.
+int main (){
+ char Estado, Código, Cidade;
+ int População, pTuristico;
+ float PIB, Área;
+
+printf("Digite o nome do Estado da sua Carta \n"); 
+printf("Digite o Código da Carta que você possui \n");
+printf("Digite o nome da Cidade da sua Carta \n");
+printf("Digite a População da sua Carta \n");
+printf("Digite a Área da sua Carta \n");
+printf("Digite o PIB da sua Carta \n");
+printf("Digite o Número de Pontos Turisticos da sua Carta \n");
+
+scanf("%s", &Estado);
+scanf("%s", &Código);
+scanf("%s", &Cidade);
+scanf("%d", &População);
+scanf("%e", &Área);
+scanf("%f", &PIB);
+scanf("%f", &pTuristico);
