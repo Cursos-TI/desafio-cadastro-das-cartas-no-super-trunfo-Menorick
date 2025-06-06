@@ -28,3 +28,4 @@ printf("PIB: %f\n", PIB);
 printf("Número de Pontos Turísticos: %f\n", pTuristico);
 
 return 0;
+}
